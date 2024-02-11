@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    background-image: url("calcy.webp");
+}
+.calculator{
+    width: 250px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    /* background-image: url("calcy.webp"); */
+    background-color: #023e7d;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.219);
+}
+.calculator input{
+    border-radius: 10px;
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 1.8em;
+    margin-top: 1vh;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 10px; */
+    background-color: #218380;
+}
+#display{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0 auto;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    margin-top: 1vh;
+    border-radius: 10px;
+}
+button{
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.number{
+    background-color: #176aa9;
+}
+.symbols{
+    background-color: #edae49;
+}
+.special{
+    background-color: brown;
+}
+button:hover{
+    background-color: rgba(230, 110, 241, 0.822);
+    color: rgb(250, 198, 172);
+}
+button:active{
+    transform: translateY(1px);
+}
+.calculator input:hover{
+    box-shadow: 0px 0px 5px 3px #00000025;
+
+}
+@media (max-width: 650px) {
+    .calculator{
+        width: 100%;
+        max-width: 290px;
+    }
+}

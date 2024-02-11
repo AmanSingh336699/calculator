@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>web calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="aman.css">
+        
+    </head>
+    <body>
+    <script src="aman.js"></script>
+       <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="appendTodisplay('7')" class="number">7</button>
+            <button onclick="appendTodisplay('8')" class="number">8</button>
+            <button onclick="appendTodisplay('9')" class="number">9</button>
+            <button onclick="appendTodisplay('/')" class="symbols">/</button>
+            <button onclick="appendTodisplay('4')" class="number">4</button>
+            <button onclick="appendTodisplay('5')" class="number">5</button>
+            <button onclick="appendTodisplay('6')" class="number">6</button>
+            <button onclick="appendTodisplay('*')" class="symbols">*</button>
+            <button onclick="appendTodisplay('1')" class="number">1</button>
+            <button onclick="appendTodisplay('2')" class="number">2</button>
+            <button onclick="appendTodisplay('3')" class="number">3</button>
+            <button onclick="appendTodisplay('-')" class="symbols">-</button>
+            <button onclick="appendTodisplay('0')" class="number">0</button>
+            <button onclick="appendTodisplay('.')" class="symbols">.</button>
+            <button onclick="calculate()" class="symbols">=</button>
+            <button onclick="appendTodisplay('+')" class="symbols">+</button>
+            <button onclick="showerr()" class="symbols">%</button>
+            <button onclick="factorial()" class="symbols">!</button>
+            <button onclick="cancel()" class="special">x</button>
+            <button onclick="clearDisplay()" class="special">C</button>
+        </div>
+       </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
